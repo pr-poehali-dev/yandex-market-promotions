@@ -95,6 +95,7 @@ const DEALS = [
     yandexReview: "Заряжает ноутбук и два телефона одновременно. Берём в командировки — очень выручает.",
     reviewAuthor: "Ольга М.",
     reviewStars: 4,
+    link: "https://market.yandex.ru/cc/9N6b8Z",
   },
   {
     id: 6,
