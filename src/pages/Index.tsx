@@ -402,17 +402,9 @@ function formatPrice(price: number) {
 }
 
 export default function Index() {
-  const [activeCategory, setActiveCategory] = useState("Все");
-  const [sortBy, setSortBy] = useState<"discount" | "rating" | "price">("discount");
   const [expandedReview, setExpandedReview] = useState<number | null>(null);
 
-  const filtered = DEALS.filter(
-    (d) => activeCategory === "Все" || d.category === activeCategory
-  ).sort((a, b) => {
-    if (sortBy === "discount") return b.discount - a.discount;
-    if (sortBy === "rating") return b.rating - a.rating;
-    return a.salePrice - b.salePrice;
-  });
+  const filtered = DEALS.sort((a, b) => b.discount - a.discount);
 
   return (
     <div className="min-h-screen bg-background font-sans">
@@ -469,48 +461,6 @@ export default function Index() {
         </div>
       </section>
 
-      {/* Filters */}
-      <div className="bg-white border-b border-border sticky top-16 z-20">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 py-3 flex flex-wrap items-center justify-between gap-3">
-          {/* Categories */}
-          <div className="flex gap-2 overflow-x-auto no-scrollbar pb-0.5">
-            {CATEGORIES.map((cat) => (
-              <button
-                key={cat}
-                onClick={() => setActiveCategory(cat)}
-                className={`whitespace-nowrap px-3 py-1.5 rounded-full text-sm font-medium transition-colors ${
-                  activeCategory === cat
-                    ? "bg-black text-white"
-                    : "bg-secondary text-foreground hover:bg-neutral-200"
-                }`}
-              >
-                {cat}
-              </button>
-            ))}
-          </div>
-
-          {/* Sort */}
-          <div className="flex items-center gap-1.5 text-sm text-muted-foreground shrink-0">
-            <Icon name="ArrowUpDown" size={14} />
-            <span className="hidden sm:inline">Сортировка:</span>
-            {[
-              { key: "discount", label: "Скидка" },
-              { key: "rating", label: "Рейтинг" },
-              { key: "price", label: "Цена" },
-            ].map(({ key, label }) => (
-              <button
-                key={key}
-                onClick={() => setSortBy(key as typeof sortBy)}
-                className={`px-2.5 py-1 rounded text-xs font-medium transition-colors ${
-                  sortBy === key ? "bg-black text-white" : "hover:bg-secondary"
-                }`}
-              >
-                {label}
-              </button>
-            ))}
-          </div>
-        </div>
-      </div>
 
       {/* Deals grid */}
       <main className="max-w-6xl mx-auto px-4 sm:px-6 py-8">
