@@ -2,7 +2,7 @@ import { useState } from "react";
 import Icon from "@/components/ui/icon";
 import { Badge } from "@/components/ui/badge";
 
-const CATEGORIES = ["Все", "Электроника", "Бытовая техника", "Смартфоны", "Ноутбуки", "Аксессуары", "Авто"];
+const CATEGORIES = ["Все", "Электроника", "Бытовая техника", "Смартфоны", "Ноутбуки", "Аксессуары", "Авто", "Инструменты"];
 
 const DEALS = [
 
@@ -138,6 +138,25 @@ const DEALS = [
     reviewAuthor: "Андрей П.",
     reviewStars: 5,
     link: "https://market.yandex.ru/cc/9N7Fqc",
+  },
+  {
+    id: 10,
+    category: "Инструменты",
+    brand: "Edon",
+    name: "Сварочный полуавтомат Edon Smart MIG-175S",
+    image: "https://cdn.poehali.dev/projects/3cc554dd-dac0-40af-b0e6-a124251b0aa4/bucket/6939a22c-3815-4ce3-8af0-0ee014bad4fe.png",
+    originalPrice: 11490,
+    salePrice: 4981,
+    discount: 57,
+    rating: 4.9,
+    reviewCount: 487,
+    badge: "−57%",
+    badgeColor: "bg-[hsl(var(--deal-red))] text-white",
+    validUntil: "18 мая",
+    yandexReview: "5 в 1, варит без газа! В комплекте катушка проволоки в подарок. 220А — справляется с любым металлом. Отличная машина за эти деньги.",
+    reviewAuthor: "Михаил Т.",
+    reviewStars: 5,
+    link: "https://market.yandex.ru/cc/9N7haf",
   },
 ];
 
