@@ -101,6 +101,25 @@ const DEALS = [
     reviewStars: 5,
     link: "https://market.yandex.ru/cc/9N6p5v",
   },
+  {
+    id: 8,
+    category: "Электроника",
+    brand: "Haier",
+    name: "Телевизор Haier 55 Smart TV S2 Pro, 55\", 4K UHD, Android TV EVO TV Dolby Digital Wi-Fi 5ГГц HDR 10 Upscaling 4K, 60 Гц",
+    image: "https://cdn.poehali.dev/projects/3cc554dd-dac0-40af-b0e6-a124251b0aa4/bucket/f8dea52b-6da6-4cf3-a977-257e15b1f680.png",
+    originalPrice: 84999,
+    salePrice: 43559,
+    discount: 49,
+    rating: 4.8,
+    reviewCount: 621,
+    badge: "−49%",
+    badgeColor: "bg-[hsl(var(--deal-red))] text-white",
+    validUntil: "15 мая",
+    yandexReview: "Отличная картинка 4K, Android работает шустро. Dolby Digital — звук хороший для встроенных динамиков. Доволен покупкой.",
+    reviewAuthor: "Василий К.",
+    reviewStars: 5,
+    link: "https://market.yandex.ru/cc/9N6xg8",
+  },
 ];
 
 function StarRating({ rating, count, size = "sm" }: { rating: number; count?: number; size?: "sm" | "md" }) {
