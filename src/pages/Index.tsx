@@ -117,6 +117,25 @@ const DEALS = [
     reviewStars: 5,
     link: "https://market.yandex.ru/cc/9N6hAo",
   },
+  {
+    id: 7,
+    category: "Бытовая техника",
+    brand: "Polaris",
+    name: "Чайник электрический стеклянный PWK 1725 CGLD WI-FI IQ Home, серебристый",
+    image: "https://cdn.poehali.dev/projects/3cc554dd-dac0-40af-b0e6-a124251b0aa4/bucket/003b7db6-754c-4b9c-8cce-c835d9b5d163.png",
+    originalPrice: 12999,
+    salePrice: 4409,
+    discount: 66,
+    rating: 4.7,
+    reviewCount: 438,
+    badge: "−66%",
+    badgeColor: "bg-[hsl(var(--deal-red))] text-white",
+    validUntil: "12 мая",
+    yandexReview: "Управляется с телефона, подсветка меняет цвет. Выглядит дорого, кипятит быстро. Очень доволен покупкой.",
+    reviewAuthor: "Игорь С.",
+    reviewStars: 5,
+    link: "https://market.yandex.ru/cc/9N6p5v",
+  },
 ];
 
 function StarRating({ rating, count, size = "sm" }: { rating: number; count?: number; size?: "sm" | "md" }) {
