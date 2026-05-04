@@ -5,42 +5,7 @@ import { Badge } from "@/components/ui/badge";
 const CATEGORIES = ["Все", "Электроника", "Бытовая техника", "Смартфоны", "Ноутбуки", "Аксессуары"];
 
 const DEALS = [
-  {
-    id: 1,
-    category: "Смартфоны",
-    brand: "Samsung",
-    name: "Galaxy S24 Ultra 256GB",
-    image: "https://via.placeholder.com/280x280/f5f5f5/333?text=Samsung+S24",
-    originalPrice: 129990,
-    salePrice: 94990,
-    discount: 27,
-    rating: 4.8,
-    reviewCount: 2341,
-    badge: "Хит продаж",
-    badgeColor: "bg-black text-white",
-    validUntil: "7 мая",
-    yandexReview: "Флагманский смартфон с отличной камерой и производительностью. Покупатели отмечают долгое время работы батареи.",
-    reviewAuthor: "Михаил К.",
-    reviewStars: 5,
-  },
-  {
-    id: 2,
-    category: "Ноутбуки",
-    brand: "Apple",
-    name: "MacBook Air M3 13\" 8GB/256GB",
-    image: "https://via.placeholder.com/280x280/f5f5f5/333?text=MacBook+Air",
-    originalPrice: 149990,
-    salePrice: 119990,
-    discount: 20,
-    rating: 4.9,
-    reviewCount: 1876,
-    badge: "Топ рейтинг",
-    badgeColor: "bg-[hsl(var(--deal-orange))] text-white",
-    validUntil: "10 мая",
-    yandexReview: "Лучший ноутбук для работы. Тихий, лёгкий, невероятно быстрый. Заряда хватает на весь рабочий день.",
-    reviewAuthor: "Анна Л.",
-    reviewStars: 5,
-  },
+
   {
     id: 3,
     category: "Бытовая техника",
