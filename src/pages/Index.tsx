@@ -44,9 +44,9 @@ const DEALS = [
   {
     id: 3,
     category: "Бытовая техника",
-    brand: "Dyson",
-    name: "Пылесос V15 Detect Absolute",
-    image: "https://via.placeholder.com/280x280/f5f5f5/333?text=Dyson+V15",
+    brand: "Midea",
+    name: "Пылесос VSS GX5",
+    image: "https://via.placeholder.com/280x280/f5f5f5/333?text=Midea+VSS+GX5",
     originalPrice: 79990,
     salePrice: 54990,
     discount: 31,
@@ -55,9 +55,10 @@ const DEALS = [
     badge: "Скидка дня",
     badgeColor: "bg-[hsl(var(--deal-red))] text-white",
     validUntil: "5 мая",
-    yandexReview: "Мощный и удобный. Лазерный детектор пыли — реально полезная фишка. Семья довольна.",
+    yandexReview: "Мощный и удобный. Легко справляется с любым покрытием. Семья довольна.",
     reviewAuthor: "Сергей В.",
     reviewStars: 4,
+    link: "https://market.yandex.ru/cc/9N6RDf",
   },
   {
     id: 4,
@@ -341,10 +342,22 @@ export default function Index() {
                   </div>
 
                   {/* CTA */}
-                  <button className="mt-auto w-full bg-black text-white font-semibold text-sm py-2.5 rounded-xl hover:bg-neutral-800 transition-colors flex items-center justify-center gap-2">
-                    Перейти к товару
-                    <Icon name="ArrowRight" size={14} />
-                  </button>
+                  {deal.link ? (
+                    <a
+                      href={deal.link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="mt-auto w-full bg-black text-white font-semibold text-sm py-2.5 rounded-xl hover:bg-neutral-800 transition-colors flex items-center justify-center gap-2"
+                    >
+                      Перейти к товару
+                      <Icon name="ArrowRight" size={14} />
+                    </a>
+                  ) : (
+                    <button className="mt-auto w-full bg-black text-white font-semibold text-sm py-2.5 rounded-xl hover:bg-neutral-800 transition-colors flex items-center justify-center gap-2">
+                      Перейти к товару
+                      <Icon name="ArrowRight" size={14} />
+                    </button>
+                  )}
                 </div>
               </article>
             ))}
