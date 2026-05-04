@@ -163,7 +163,7 @@ const DEALS = [
     category: "Бытовая техника",
     brand: "Tuvio",
     name: "Овощерезка с насадкой для кубиков, соломки, тёркой, шинковкой Tuvio TFP01, белая",
-    image: "https://cdn.poehali.dev/projects/3cc554dd-dac0-40af-b0e6-a124251b0aa4/bucket/3f8710c6-4a0b-4f45-bed5-4ed96ca25fac.png",
+    image: "https://cdn.poehali.dev/projects/3cc554dd-dac0-40af-b0e6-a124251b0aa4/bucket/f70cba68-3606-429e-a118-133cf2a79f28.png",
     originalPrice: 7028,
     salePrice: 4993,
     discount: 29,
