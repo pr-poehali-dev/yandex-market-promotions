@@ -45,7 +45,7 @@ const DEALS = [
     id: 3,
     category: "Бытовая техника",
     brand: "Midea",
-    name: "Пылесос VSS GX5",
+    name: "Моющий вертикальный беспроводной пылесос Midea VSS GX5, 3 режима, самоочистка, зарядная станция, серый",
     image: "https://cdn.poehali.dev/projects/3cc554dd-dac0-40af-b0e6-a124251b0aa4/bucket/b6a23548-3400-4d25-9ffa-16eb967382bd.png",
     originalPrice: 22990,
     salePrice: 12981,
