@@ -46,7 +46,7 @@ const DEALS = [
     category: "Бытовая техника",
     brand: "Midea",
     name: "Пылесос VSS GX5",
-    image: "https://via.placeholder.com/280x280/f5f5f5/333?text=Midea+VSS+GX5",
+    image: "https://cdn.poehali.dev/projects/3cc554dd-dac0-40af-b0e6-a124251b0aa4/bucket/b6a23548-3400-4d25-9ffa-16eb967382bd.png",
     originalPrice: 22990,
     salePrice: 12981,
     discount: 44,
