@@ -480,9 +480,7 @@ export default function Index() {
                       (e.target as HTMLImageElement).src = "/placeholder.svg";
                     }}
                   />
-                  <span className={`absolute top-3 left-3 text-xs font-bold px-2.5 py-1 rounded-full ${deal.badgeColor}`}>
-                    {deal.badge}
-                  </span>
+
                   <span className="absolute top-3 right-3 bg-[hsl(var(--deal-red))] text-white text-sm font-black px-2.5 py-1 rounded-full font-mono">
                     −{deal.discount}%
                   </span>
