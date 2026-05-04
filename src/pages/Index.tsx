@@ -2,7 +2,7 @@ import { useState } from "react";
 import Icon from "@/components/ui/icon";
 import { Badge } from "@/components/ui/badge";
 
-const CATEGORIES = ["Все", "Электроника", "Бытовая техника", "Смартфоны", "Ноутбуки", "Аксессуары"];
+const CATEGORIES = ["Все", "Электроника", "Бытовая техника", "Смартфоны", "Ноутбуки", "Аксессуары", "Авто"];
 
 const DEALS = [
 
@@ -119,6 +119,25 @@ const DEALS = [
     reviewAuthor: "Василий К.",
     reviewStars: 5,
     link: "https://market.yandex.ru/cc/9N6xg8",
+  },
+  {
+    id: 9,
+    category: "Авто",
+    brand: "БелАК",
+    name: "Домкрат подкатной автомобильный гидравлический 2 т БелАК БАК.80021",
+    image: "https://cdn.poehali.dev/projects/3cc554dd-dac0-40af-b0e6-a124251b0aa4/bucket/c38e2bf2-f5d5-4b34-a7a7-fb4b7e2cf5c0.png",
+    originalPrice: 3810,
+    salePrice: 2348,
+    discount: 38,
+    rating: 4.7,
+    reviewCount: 312,
+    badge: "−38%",
+    badgeColor: "bg-[hsl(var(--deal-red))] text-white",
+    validUntil: "18 мая",
+    yandexReview: "Крепкий и надёжный. Поднял машину без проблем. Всесезонное масло — работает даже в мороз. Рекомендую.",
+    reviewAuthor: "Андрей П.",
+    reviewStars: 5,
+    link: "https://market.yandex.ru/cc/9N7Fqc",
   },
 ];
 
