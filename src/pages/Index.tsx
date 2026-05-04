@@ -426,7 +426,7 @@ export default function Index() {
                 Горячие предложения · Май 2026
               </p>
               <h1 className="text-4xl sm:text-5xl font-black tracking-tight leading-none mb-4">
-                Скидки до 40%<br />на топовые товары
+                Яндекс Маркет<br />скидки на электронику до 85%
               </h1>
               <p className="text-white/60 max-w-md text-sm leading-relaxed">
                 Подборка лучших акций с независимыми рейтингами и живыми отзывами покупателей Яндекс Маркета.
